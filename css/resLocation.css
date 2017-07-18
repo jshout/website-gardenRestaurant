@@ -1,0 +1,108 @@
+
+/********************************
+* {
+	outline: 2px solid red;
+}
+**********************************/
+
+
+
+.locContent,
+.locLeft,
+.locRight,
+.locAddr {
+    display: flex;
+}
+
+.locContent {
+    max-width: 1024px;
+    margin: auto;
+    color: #DE1507;
+}
+
+.locLeft {
+    flex-direction: column;
+    margin-top: 5em;
+    margin-right: 1em;
+    width: 50%;
+    height: auto;
+    flex: 1;
+    
+}
+
+.locRight {
+    margin-top: 5em;
+    margin-left: 1em;
+    width: 50%;
+    height: auto;
+    flex: 1;
+    
+}
+
+.hours1 {
+   margin-bottom: 0; 
+}
+
+.hours2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.res1 {
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.res2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.locLeft h3, h4 {
+    align-self: center;
+}
+
+.locAddr {
+    flex-direction: column;
+    margin: auto;
+}
+
+.locAddr h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (max-width: 390px) {
+    .locContent {
+        flex-direction: column;
+        margin-top: 5em;
+        }
+    
+    .locLeft,
+    .locRight {
+        margin: auto;
+        }
+    
+    }
+
+	@media (max-width: 600px) { 
+        .mapFrame {
+            width: 10em;
+            height: 15em;
+            
+        }
+    }
+
+    @media (max-width: 760px) {
+       
+    }
+
+
+    @media (min-width: 1025px) {
+		
+	}
+

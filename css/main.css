@@ -1,0 +1,200 @@
+
+/********************************
+* {
+	outline: 2px solid red;
+}
+**********************************/
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/****** --- menu nav -----*******/
+
+.mainHeader {
+    height: 5em;
+  width: 100%;
+  max-width: 1024px;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background: inherit;
+    
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-weight: 900;
+  color: #DE1507;
+  text-shadow: 1px 1px 0px black;
+}
+
+
+.logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+    margin-right: 1em;
+  z-index: 21;
+}
+
+.bc1, .bc2 {
+  display: inline-block;
+  margin-left: .5em;
+}
+
+
+
+.menu-link {
+  float: left;
+  margin: 0 1% 5px 0;
+  padding: 1em .5em .5em;
+  background: #f6f6f6;
+  line-height: 0;
+  text-decoration: none;
+  color: #BF1B0F;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.menu-link:before {
+  display: block;
+  padding: 10px 0;
+  content: '≡';
+  font-size: 3em;
+  line-height: 0;
+}
+
+.menu-link.active {
+  background: #333;
+  color: #fff;
+}
+
+.menu-link span {
+  display: inline-block;
+  text-indent: -100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.js .menu {
+  overflow: hidden;
+  max-height: 0;
+  /*@include minFirst(640) {
+        max-height: inherit;
+    }*/
+}
+
+.menu {
+  padding: 0;
+  clear: both;
+  transition: all .3s ease-out;
+}
+
+.menu.active {
+  max-height: 17em;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-bottom: none;
+  text-align: center;
+}
+
+.menu li {
+  max-width: 25em;
+}
+
+.menu li a {
+  display: block;
+  padding: 1em;
+  border-bottom: 1px #999 dotted;
+  text-decoration: none;
+  color: #BF1B0F;
+  background: #fff;
+}
+
+
+/* ---- Layout Containers ---- */
+
+.wrapper {
+    display: flex;
+    max-width: 1024px;
+    margin: auto;
+    min-height: 100vh;
+    position: relative;
+    flex-direction: column;
+    
+}
+
+.allFooter {
+    display: flex;
+    width: 100%;
+    height: 3em;
+    align-items: center;
+}
+
+.addr {
+    margin-left: 1em;
+    margin-right: auto;
+}
+
+.pnum {
+    margin-right: 1em;
+}
+
+
+/* ---- Navigation ---- */
+
+
+
+
+/* ---- Page Elements ---- */
+
+
+
+/*  ----- Footer  -------- *?
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+	@media (max-width: 400px) {       
+        .bc2 {
+            display: none;
+        }
+        
+        .bc1 {
+            margin-right: 2em;
+        }
+    }
+
+    @media (min-width: 769px) {
+  
+    }
+
+
+    @media (min-width: 1025px) {
+		
+	}
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+
+
+.mainBackground {
+    width: 100%;
+    height: 100%;
+}
+
+.mainBackground img {
+   width: 100%;
+    height: 100%;
+    display: none;
+}
+
+/*
+.allFooter {
+    width: 100%;
+    height: 3em;
+    align-items: center;
+}
+
+.addr {
+    margin-left: 1em;
+    margin-right: auto;
+}
+
+.pnum {
+    margin-right: 1em;
+}
+
+*/
